@@ -1,38 +1,25 @@
 .App {
-  text-align: center;
+  text-align: left; /* 기본 정렬을 왼쪽으로 설정 */
+  padding: 20px; /* 페이지 여백 추가 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-page {
+  margin-top: 20px; /* 메인 페이지 여백 조정 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex; /* Flexbox를 사용하여 로고와 제목을 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+  width: 140px; /* 로고 크기 조정 */
+  margin-right: 10px; /* 로고와 제목 간의 간격 조정 */
+  border-radius: 50%; /* 동그란 형태로 만들기 */
+  opacity: 0.7; /* 투명도 조정 (0은 완전 투명, 1은 불투명) */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-size: 2rem; /* 제목 크기 조정 */
+  color: #61dafb; /* 제목 색상 조정 */
 }
