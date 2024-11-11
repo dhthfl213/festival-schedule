@@ -1,0 +1,127 @@
+/* 컨테이너 스타일 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    
+}
+
+/* 카드 스타일 */
+.card {
+    width: 350px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 입력 필드 스타일 */
+.card input {
+    width: 95%; /* 모든 입력 필드 너비를 80%로 설정 */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 버튼 스타일 */
+button {
+    width: 80%; /* 버튼의 너비를 80%로 설정 */
+    max-width: 340px; /* 최대 너비를 340px로 설정 */
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px; /* 버튼 글자 크기 조정 */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 인증 코드 및 전화번호 입력 필드 그룹 */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%; /* 입력 필드 너비 */
+    padding: 10px;
+    margin-right: 5px;
+    border: 2px solid #ddd; /* 테두리 두께 조정 */
+    border-radius: 5px;
+    height: 40px; /* 높이 일관성 설정 */
+}
+
+.input-group button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* 버튼 글자 크기 조정 */
+    height: 40px; /* 높이 일관성 설정 */
+    border-radius: 5px; /* 경계 둥글게 */
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+/* 소셜 로그인 스타일 */
+.social-login {
+    text-align: center; /* 중앙 정렬 */
+    margin-top: 20px;
+}
+
+.social-login h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons svg {
+    color: #555;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons svg:hover {
+    color: #007bff;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* 모바일에서는 카드 너비를 90%로 설정 */
+    }
+}
+
+.logo-link {
+    cursor: pointer; /* 링크가 클릭 가능한 상태임을 나타냅니다. */
+    text-decoration: none; /* 링크에 밑줄이 생기지 않도록 합니다. */
+    color: inherit; /* 상속된 색상을 사용합니다. */
+    position: relative; /* z-index를 적용하기 위해 position을 relative로 설정합니다. */
+    z-index: 10; /* 다른 요소보다 위에 있도록 설정합니다. */
+}

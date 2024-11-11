@@ -23,3 +23,32 @@
   font-size: 2rem; /* 제목 크기 조정 */
   color: #61dafb; /* 제목 색상 조정 */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* App.css에 추가 */
+.rbc-calendar {
+  padding-top: 60px; /* 툴바 높이만큼 캘린더 위쪽에 여백 추가 */
+  position: relative;
+}
+
+.rbc-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 93%;
+  text-align: center;
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* 캘린더보다 위에 위치 */
+}
+
+.rbc-toolbar .rbc-btn-group button:nth-child(3),
+.rbc-toolbar .rbc-btn-group button:nth-child(4) {
+  display: none; /* "Day"와 "Agenda" 버튼 숨기기 */
+}

@@ -1,0 +1,10 @@
+/* FestivalCalendar.css */
+.rbc-toolbar {
+    display: flex;
+    justify-content: center; /* 버튼들을 중앙 정렬 */
+    margin-bottom: 10px; /* 버튼과 캘린더 사이 여백 추가 */
+}
+
+.rbc-toolbar button {
+    margin: 0 5px; /* 버튼 사이 여백 추가 */
+}

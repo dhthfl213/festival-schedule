@@ -1,0 +1,65 @@
+/* 슬라이더 컨테이너 */
+.slider-container {
+  width: 100%;
+  max-width: 800px;  /* 최대 너비 설정 */
+  margin: 0 auto;  /* 중앙 정렬 */
+  position: relative;
+  overflow: hidden;  /* 이미지가 컨테이너 밖으로 벗어나지 않게 */
+}
+
+/* 슬라이더 이미지 */
+.slider-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;  /* 비율을 유지하며 꽉 차도록 설정 */
+  max-height: 500px;   /* 이미지의 최대 높이 */
+}
+
+/* 화살표 스타일 */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: block;  /* 기본적으로 보이도록 설정 */
+}
+
+.arrow.next {
+  right: 10px;
+}
+
+.arrow.prev {
+  left: 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 점 네비게이션 스타일 */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:hover:before {
+  color: gray;
+  opacity: 1;
+}
